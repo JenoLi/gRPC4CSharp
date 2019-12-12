@@ -1,0 +1,24 @@
+﻿syntax ="proto3";
+package grpcTest;
+ 
+service gRPC {
+  rpc SayHello (TestRequest) returns(TestReply) {}
+  rpc Add (AddTarget) returns(SumValue) {}
+}
+ 
+message TestRequest {
+  string name = 1;
+}
+ 
+message TestReply {
+  string message = 1;
+}
+
+message AddTarget{
+  int32 v1=1;
+  int32 v2=2;
+}
+
+message SumValue{
+  int32 sum=1;
+}

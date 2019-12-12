@@ -1,0 +1,1 @@
+cmd /k start packages\Grpc.Tools.2.25.0\tools\windows_x86\protoc.exe -Iprotos --csharp_out Testbat --grpc_out Testbat protos/test.proto --plugin=protoc-gen-grpc=packages/Grpc.Tools.2.25.0/tools/windows_x86/grpc_csharp_plugin.exe
